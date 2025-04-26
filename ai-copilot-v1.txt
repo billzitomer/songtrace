@@ -1,0 +1,9 @@
+Architect a modern SaaS app for viewing and contributing to information about songs, focused on tracing origins and various versions by different artists. Choose technologies most appropriate for these requirements:
+* App should be open-source using MIT license and only based on appropriately licensed works.
+* App must be able to run in a free cloud environment.
+* All technologies used should be free.
+* Data includes lists of various entities with various relationships. Song is the primary entity and other entities include but not limited to: author, artist, record label. 
+* App will have a UI for visualizing the data, with ability to browse and search.
+* App will have a UI for managing the data with typical CRUD operations. The management UI is restricted to privileged users. 
+* App will have a scalable backend with appropriate storage.
+* App will have an API for both the frontend and for other apps to use.
