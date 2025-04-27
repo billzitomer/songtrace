@@ -1,0 +1,18 @@
+@startuml
+title C4 Level 2: Container Diagram
+
+actor User as U
+actor "External App" as EA
+
+package "SongTrace SaaS App" {
+  component "Frontend (React.js)" as FE
+  component "Backend (Node.js + Express)" as BE
+  component "Database (PostgreSQL)" as DB
+}
+
+U --> FE : Interacts with
+FE --> BE : Sends API requests
+BE --> DB : Reads/Writes data
+EA --> BE : Consumes API
+
+@enduml

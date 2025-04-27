@@ -1,0 +1,35 @@
+@startuml
+title C4 Level 3: Component Diagram
+
+package "Frontend (React.js)" {
+  component "Search and Browse UI" as SBU
+  component "CRUD Management UI" as CMU
+  component "Authentication UI" as AU
+}
+
+package "Backend (Node.js + Express)" {
+  component "API Endpoints" as API
+  component "Authentication Service" as AS
+  component "Role Management Service" as RMS
+}
+
+package "Database (PostgreSQL)" {
+  component "Song Table" as ST
+  component "Author Table" as AT
+  component "Artist Table" as ART
+  component "Record Label Table" as RLT
+  component "User Table" as UT
+}
+
+SBU --> API : Sends requests
+CMU --> API : Sends requests
+AU --> AS : Handles authentication
+API --> AS : Verifies authentication
+API --> RMS : Checks roles
+API --> ST : Reads/Writes data
+API --> AT : Reads/Writes data
+API --> ART : Reads/Writes data
+API --> RLT : Reads/Writes data
+API --> UT : Reads/Writes data
+
+@enduml

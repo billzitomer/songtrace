@@ -1,0 +1,18 @@
+@startuml
+title C4 Level 1: System Context
+
+actor User as U
+actor "External App" as EA
+
+package "SongTrace SaaS App" {
+  component "Frontend" as FE
+  component "Backend" as BE
+  component "Database" as DB
+}
+
+U --> FE : Interacts with
+FE --> BE : Sends requests
+BE --> DB : Reads/Writes data
+EA --> BE : Consumes API
+
+@enduml
