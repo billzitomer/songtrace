@@ -1,3 +1,0 @@
-# Copilot V1
-
-When I started with "Architect" I was expecting code design but it actually generated a complete project. However the service layer is incomplete and it does not appear to read/write any data. I was also expecting some detail about technology choices. The architecture doc is completely lacking. It appears to have chosen mongoose for data but there is only a model. I have not tried to run it yet or looked at the front end, which it chose React. Next version will focus on getting it to produce a system design versus code. 

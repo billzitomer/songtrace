@@ -1,0 +1,55 @@
+AI Prompts for Creating the SongTrace App
+
+1. Frontend Development
+Design a modern, responsive frontend for a SaaS app called "SongTrace" using React.js. The app should allow users to:
+- Browse and search song data, including relationships between songs, authors, artists, and record labels.
+- Perform CRUD operations for privileged users (Admin and Contributor roles).
+- Create and log in to user accounts with role-based access control (Admin, Contributor, Basic).
+Use Tailwind CSS for styling and Redux or Context API for state management. Ensure the UI is intuitive and mobile-friendly.
+
+2. Backend Development
+Develop a scalable backend for a SaaS app called "SongTrace" using Node.js and Express.js. The backend should:
+- Provide RESTful API endpoints for the frontend and external apps.
+- Implement role-based access control (RBAC) for Admin, Contributor, and Basic roles.
+- Include authentication and authorization using Passport.js or Auth0 with JWT.
+- Handle CRUD operations for entities like Song, Author, Artist, and Record Label.
+- Use PostgreSQL as the database, with Sequelize or Prisma as the ORM.
+Document the API using Swagger/OpenAPI.
+
+3. Database Design
+Design a relational database schema for a SaaS app called "SongTrace" using PostgreSQL. The schema should include:
+- A "Song" table with attributes like title, release date, and genre.
+- An "Author" table with attributes like name and biography.
+- An "Artist" table with attributes like name and discography.
+- A "Record Label" table with attributes like name and location.
+- A "User" table with attributes like username, email, password, and role (Admin, Contributor, Basic).
+Define relationships between these tables (e.g., many-to-many between Song and Artist). Ensure the schema is normalized and scalable.
+
+4. Hosting and Deployment
+Provide a deployment plan for a SaaS app called "SongTrace" that uses:
+- React.js for the frontend, hosted on Vercel.
+- Node.js with Express.js for the backend, hosted on Render.
+- PostgreSQL for the database, hosted on Supabase or Railway.
+Ensure the deployment is cost-effective (free tier) and includes CI/CD pipelines for automated builds and deployments.
+
+5. Authentication and Authorization
+Implement authentication and authorization for a SaaS app called "SongTrace" using Passport.js or Auth0. The system should:
+- Allow users to create accounts and log in securely.
+- Use JWT for session management.
+- Support role-based access control (RBAC) with roles: Admin, Contributor, and Basic.
+- Restrict CRUD operations to Admin and Contributor roles.
+Provide detailed documentation for integrating the authentication system with the frontend and backend.
+
+6. Testing
+Write unit and integration tests for a SaaS app called "SongTrace" using Jest and Cypress. The tests should cover:
+- Frontend components (React.js) for browsing, searching, and CRUD operations.
+- Backend API endpoints (Node.js + Express.js) for authentication, role management, and CRUD operations.
+- Database interactions (PostgreSQL) for reading and writing data.
+Ensure the tests are comprehensive and include edge cases.
+
+7. API Documentation
+Generate API documentation for a SaaS app called "SongTrace" using Swagger/OpenAPI. The documentation should include:
+- Endpoints for CRUD operations on Song, Author, Artist, and Record Label entities.
+- Authentication endpoints for login and user management.
+- Role-based access control (RBAC) details for Admin, Contributor, and Basic roles.
+Provide example requests and responses for each endpoint.
